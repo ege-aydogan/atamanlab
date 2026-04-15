@@ -17,6 +17,8 @@ export default function RootLayout({
   return (
     <html lang="de">
       <head>
+        <link rel="icon" href="/atamanlab-logo.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/atamanlab-logo.png" />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
