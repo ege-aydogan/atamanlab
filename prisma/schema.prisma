@@ -1,0 +1,98 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model Category {
+  id          Int       @id @default(autoincrement())
+  name        String    @unique
+  slug        String    @unique
+  description String?
+  iconName    String
+  imageUrl    String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  products    Product[]
+}
+
+model Product {
+  id               Int      @id @default(autoincrement())
+  name             String
+  slug             String   @unique
+  categoryId       Int
+  category         Category @relation(fields: [categoryId], references: [id], onDelete: Restrict)
+  modelNumber      String
+  shortDescription String?
+  fullDescription  String?
+  brandId          Int?
+  brand            Brand?   @relation(fields: [brandId], references: [id])
+  features         String   @default("[]")
+  specifications   String   @default("[]")
+  stockStatus      Boolean  @default(true)
+  isNew            Boolean  @default(false)
+  images           String   @default("[]")
+  documents        String   @default("[]")
+  accessories      String   @default("[]")
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
+
+model NewsArticle {
+  id            Int      @id @default(autoincrement())
+  title         String
+  slug          String
+  locale        String   @default("tr")
+  categoryBadge String
+  excerpt       String
+  content       String
+  coverImageUrl String
+  publishedAt   DateTime
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@unique([slug, locale])
+}
+
+model TeamMember {
+  id             Int      @id @default(autoincrement())
+  fullName       String
+  title          String
+  expertiseLabel String?
+  photoUrl       String
+  displayOrder   Int
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+model ThemeSetting {
+  id         Int      @id @default(autoincrement())
+  tokenName  String   @unique
+  tokenValue String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+model AdminUser {
+  id           Int      @id @default(autoincrement())
+  email        String   @unique
+  passwordHash String
+  name         String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Brand {
+  id          Int       @id @default(autoincrement())
+  name        String    @unique
+  slug        String    @unique
+  logoUrl     String
+  websiteUrl  String?
+  displayOrder Int      @default(0)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  products    Product[]
+}
