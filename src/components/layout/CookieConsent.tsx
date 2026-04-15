@@ -82,7 +82,7 @@ export function CookieConsent() {
   if (!visible) return null;
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-end justify-center p-4 md:p-6 bg-black/20 backdrop-blur-sm">
+    <div className="fixed inset-0 z-[100] flex items-end justify-center p-4 md:p-6">
       <div className="relative w-full max-w-2xl rounded-2xl bg-white shadow-2xl border border-outline-variant/10 overflow-hidden">
         {/* Çarpı butonu */}
         <button
