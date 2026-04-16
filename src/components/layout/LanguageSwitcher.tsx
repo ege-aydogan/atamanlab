@@ -6,7 +6,6 @@ import { useRouter, usePathname } from '@/i18n/navigation';
 import type { Locale } from '@/i18n/config';
 
 const localeLabels: Record<Locale, string> = {
-  tr: 'TR',
   en: 'EN',
   de: 'DE',
 };
@@ -40,7 +39,7 @@ export function LanguageSwitcher({ isTransparent = false }: LanguageSwitcherProp
     <>
       {/* Desktop: inline */}
       <div className="hidden md:flex items-center gap-0.5 text-[13px]">
-        {(['tr', 'en', 'de'] as Locale[]).map((locale, index) => (
+        {(['en', 'de'] as Locale[]).map((locale, index) => (
           <span key={locale} className="flex items-center">
             {index > 0 && (
               <span className={`mx-1.5 transition-colors duration-300 ${isTransparent ? 'text-white/25' : 'text-on-surface-variant/25'}`}>/</span>
@@ -79,7 +78,7 @@ export function LanguageSwitcher({ isTransparent = false }: LanguageSwitcherProp
 
         {open && (
           <div className="absolute right-0 top-full mt-1 rounded-xl bg-white shadow-xl border border-outline-variant/15 overflow-hidden min-w-[100px] z-50">
-            {(['de', 'tr', 'en'] as Locale[]).map((locale) => (
+            {(['de', 'en'] as Locale[]).map((locale) => (
               <button
                 key={locale}
                 onClick={() => handleSwitch(locale)}

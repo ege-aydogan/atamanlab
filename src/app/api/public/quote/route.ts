@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { quoteFormSchema } from "@/lib/validations";
+import { sendContactEmail } from "@/lib/mail";
 
 export async function POST(request: NextRequest) {
   try {
@@ -19,7 +20,7 @@ export async function POST(request: NextRequest) {
         {
           success: false,
           error: {
-            message: "Form doğrulama hatası",
+            message: "Validierungsfehler",
             code: "VALIDATION_ERROR",
             fields: fieldErrors,
           },
@@ -28,15 +29,22 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // For now, just validate and return success (no email sending)
+    await sendContactEmail({
+      fullName: result.data.fullName,
+      email: result.data.email,
+      company: result.data.company,
+      message: result.data.message,
+      productName: result.data.productName,
+    });
+
     return NextResponse.json({
       success: true,
-      data: { message: "Teklif talebiniz başarıyla alındı" },
+      data: { message: "Ihre Anfrage wurde erfolgreich gesendet" },
     });
   } catch (error) {
     console.error("POST /api/public/quote error:", error);
     return NextResponse.json(
-      { success: false, error: { message: "Teklif gönderilemedi", code: "INTERNAL_ERROR" } },
+      { success: false, error: { message: "Nachricht konnte nicht gesendet werden", code: "INTERNAL_ERROR" } },
       { status: 500 }
     );
   }

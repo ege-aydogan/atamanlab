@@ -78,7 +78,7 @@
     "contactTitle": "Kontakt",
     "address": "Geistenbecker Feld 6, 41199 Mönchengladbach, Deutschland",
     "phone": "+49 2166 2786926",
-    "email": "ataman@atamanlab.com",
+    "email": "info@atamanlab.com",
     "mapLabel": "Auf Karte anzeigen",
     "valuePropsLabel": "Unsere Vorteile",
     "valuePropsTitle": "Warum Atamanlab?",
@@ -134,7 +134,7 @@
     "successMessage": "Ihre Anfrage wurde erfolgreich übermittelt.",
     "contactTitle": "Kontaktinformationen",
     "contactPhone": "+49 2166 2786926",
-    "contactEmail": "ataman@atamanlab.com"
+    "contactEmail": "info@atamanlab.com"
   },
   "ContactPage": {
     "heroLabel": "Kontaktieren Sie uns",
@@ -148,7 +148,7 @@
     "formTitle": "Wie können wir Ihnen helfen?",
     "formDescription": "Füllen Sie das Formular für Produktinformationen, Preisangebote oder technische Supportanfragen aus. Unser Team wird sich so schnell wie möglich bei Ihnen melden.",
     "responseTime": "Antwortzeit: innerhalb von 24 Stunden",
-    "languageSupport": "Türkisch, Deutsch, Englisch Support",
+    "languageSupport": "Deutsch, Englisch Support",
     "freeConsulting": "Kostenlose Beratung",
     "fieldName": "Vollständiger Name",
     "fieldEmail": "E-Mail",
@@ -192,7 +192,7 @@
     "contactTitle": "Kontakt",
     "address": "Geistenbecker Feld 6, 41199 Mönchengladbach, Deutschland",
     "phone": "+49 2166 2786926",
-    "email": "ataman@atamanlab.com",
+    "email": "info@atamanlab.com",
     "copyright": "© 2026 Atamanlab. Alle Rechte vorbehalten."
   },
   "NotFound": {

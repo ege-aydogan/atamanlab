@@ -51,9 +51,9 @@ export default function ImpressumPage() {
                   <Icon name="fax" className="text-secondary text-lg" />
                   <span>+49 2166 2786927</span>
                 </div>
-                <a href="mailto:ataman@atamanlab.com" className="flex items-center gap-3 text-on-surface-variant hover:text-secondary transition-colors">
+                <a href="mailto:info@atamanlab.com" className="flex items-center gap-3 text-on-surface-variant hover:text-secondary transition-colors">
                   <Icon name="mail" className="text-secondary text-lg" />
-                  <span>ataman@atamanlab.com</span>
+                  <span>info@atamanlab.com</span>
                 </a>
                 <a href="https://www.tinlabortechnik.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-on-surface-variant hover:text-secondary transition-colors">
                   <Icon name="language" className="text-secondary text-lg" />

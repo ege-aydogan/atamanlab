@@ -92,14 +92,14 @@ export default function ContactPage() {
 
           {/* Email */}
           <a
-            href="mailto:ataman@atamanlab.com"
+            href="mailto:info@atamanlab.com"
             className="bg-white rounded-xl shadow-lg p-6 border border-outline-variant/10 hover:shadow-xl hover:border-secondary/20 transition-all group"
           >
             <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 mb-4">
               <Icon name="mail" className="text-2xl text-secondary" />
             </div>
             <p className="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">{t('cardEmail')}</p>
-            <p className="text-sm font-semibold text-on-surface group-hover:text-secondary transition-colors">ataman@atamanlab.com</p>
+            <p className="text-sm font-semibold text-on-surface group-hover:text-secondary transition-colors">info@atamanlab.com</p>
           </a>
         </div>
       </section>

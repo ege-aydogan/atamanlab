@@ -49,8 +49,8 @@ export function ContactSection() {
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-secondary-container/20">
                   <Icon name="mail" className="text-2xl text-secondary" />
                 </div>
-                <a href="mailto:ataman@atamanlab.com" className="text-secondary hover:underline">
-                  ataman@atamanlab.com
+                <a href="mailto:info@atamanlab.com" className="text-secondary hover:underline">
+                  info@atamanlab.com
                 </a>
               </div>
             </div>

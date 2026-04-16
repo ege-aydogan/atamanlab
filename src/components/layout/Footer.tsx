@@ -87,7 +87,7 @@ export function Footer() {
               <Icon name="call" className="text-sky-400 shrink-0" />
               <span>{t('phone')}</span>
             </a>
-            <a href="mailto:ataman@atamanlab.com" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors">
+            <a href="mailto:info@atamanlab.com" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors">
               <Icon name="mail" className="text-sky-400 shrink-0" />
               <span>{t('email')}</span>
             </a>

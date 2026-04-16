@@ -78,7 +78,7 @@
     "contactTitle": "İletişim",
     "address": "Geistenbecker Feld 6, 41199 Mönchengladbach, Deutschland",
     "phone": "+49 2166 2786926",
-    "email": "ataman@atamanlab.com",
+    "email": "info@atamanlab.com",
     "mapLabel": "Haritada Göster",
     "valuePropsLabel": "Avantajlarımız",
     "valuePropsTitle": "Neden Atamanlab?",
@@ -134,7 +134,7 @@
     "successMessage": "Talebiniz başarıyla gönderildi.",
     "contactTitle": "İletişim Bilgileri",
     "contactPhone": "+49 2166 2786926",
-    "contactEmail": "ataman@atamanlab.com"
+    "contactEmail": "info@atamanlab.com"
   },
   "ContactPage": {
     "heroLabel": "Bize Ulaşın",
@@ -201,7 +201,7 @@
     "contactTitle": "İletişim",
     "address": "Geistenbecker Feld 6, 41199 Mönchengladbach, Deutschland",
     "phone": "+49 2166 2786926",
-    "email": "ataman@atamanlab.com",
+    "email": "info@atamanlab.com",
     "copyright": "© 2026 Atamanlab. Tüm Hakları Saklıdır."
   },
   "NotFound": {
