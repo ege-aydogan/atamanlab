@@ -62,11 +62,42 @@ export async function sendContactEmail(data: ContactFormData) {
     </div>
   `;
 
+  // Mail to Atamanlab
   await transporter.sendMail({
     from: `"Atamanlab Website" <${process.env.SMTP_USER || "form@atamanlab.com"}>`,
     to: process.env.CONTACT_EMAIL || "ataman@atamanlab.com",
     replyTo: data.email,
     subject,
     html,
+  });
+
+  // Confirmation mail to sender
+  const confirmHtml = `
+    <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+      <h2 style="color: #006591; border-bottom: 2px solid #006591; padding-bottom: 10px;">
+        Thank you for your inquiry / Vielen Dank für Ihre Anfrage
+      </h2>
+      <p style="color: #333; line-height: 1.6;">
+        Dear ${data.fullName},
+      </p>
+      <p style="color: #555; line-height: 1.6;">
+        We have received your message and will get back to you as soon as possible, usually within 24 hours.
+      </p>
+      <p style="color: #555; line-height: 1.6;">
+        Wir haben Ihre Nachricht erhalten und werden uns so schnell wie möglich bei Ihnen melden, in der Regel innerhalb von 24 Stunden.
+      </p>
+      <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;" />
+      <p style="color: #999; font-size: 12px;">
+        Atamanlab — Geistenbecker Feld 6, 41199 Mönchengladbach, Germany<br/>
+        <a href="https://atamanlab.com" style="color: #006591;">www.atamanlab.com</a>
+      </p>
+    </div>
+  `;
+
+  await transporter.sendMail({
+    from: `"Atamanlab" <${process.env.SMTP_USER || "form@atamanlab.com"}>`,
+    to: data.email,
+    subject: "Your inquiry has been received / Ihre Anfrage wurde empfangen",
+    html: confirmHtml,
   });
 }
