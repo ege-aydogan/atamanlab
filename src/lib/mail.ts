@@ -88,7 +88,7 @@ export async function sendContactEmail(data: ContactFormData) {
       </p>
       <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;" />
       <p style="color: #999; font-size: 12px;">
-        Atamanlab — Geistenbecker Feld 6, 41199 Mönchengladbach, Germany<br/>
+        Atamanlab — Geistenbecker Feld 68, 41199 Mönchengladbach, Germany<br/>
         <a href="https://atamanlab.com" style="color: #006591;">www.atamanlab.com</a>
       </p>
     </div>
