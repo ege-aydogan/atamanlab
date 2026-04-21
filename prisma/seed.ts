@@ -136,11 +136,13 @@ async function main() {
     { name: "Radwag", slug: "radwag", logoUrl: "/uploads/brands/radwag.jpg" },
     { name: "Retsch", slug: "retsch", logoUrl: "/uploads/brands/retsch.jpg" },
     { name: "Sartorius", slug: "sartorius", logoUrl: "/uploads/brands/sartorius.jpg" },
-    { name: "Thermo Fisher", slug: "thermo", logoUrl: "/uploads/brands/thermo.jpg" },
+    { name: "Thermo Fisher Scientific", slug: "thermo", logoUrl: "/uploads/brands/thermo.jpg", websiteUrl: "https://www.thermofisher.com" },
     { name: "VITLAB", slug: "vitlab", logoUrl: "/uploads/brands/vitlab.jpg" },
     { name: "Witeg", slug: "witeg", logoUrl: "/uploads/brands/witeg.jpg" },
     { name: "Xylen", slug: "xylen", logoUrl: "/uploads/brands/xylen.jpg" },
     { name: "Zeltex", slug: "zeltex", logoUrl: "/uploads/brands/zeltex.jpg" },
+    { name: "CPAchem", slug: "cpachem", logoUrl: "/uploads/brands/cpachem.svg", websiteUrl: "https://www.cpachem.com" },
+    { name: "LGC Standards", slug: "lgc-standards", logoUrl: "/uploads/brands/lgc-standards.jpg", websiteUrl: "https://www.lgcstandards.com" },
   ];
 
   for (let i = 0; i < brandList.length; i++) {

@@ -31,7 +31,7 @@ export default function ImpressumPage() {
                 Angaben gemäß § 5 TMG
               </h2>
               <p className="text-on-surface font-semibold text-lg mb-1">Mehmet Ataman</p>
-              <p className="text-on-surface-variant mb-4">Tin Labortechnik</p>
+              <p className="text-on-surface-variant mb-4">Atamanlab</p>
               <p className="text-on-surface-variant leading-relaxed">
                 Geistenbecker Feld 68<br />
                 41199 Mönchengladbach<br />
@@ -55,9 +55,9 @@ export default function ImpressumPage() {
                   <Icon name="mail" className="text-secondary text-lg" />
                   <span>info@atamanlab.com</span>
                 </a>
-                <a href="https://www.tinlabortechnik.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-on-surface-variant hover:text-secondary transition-colors">
+                <a href="https://www.atamanlab.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-on-surface-variant hover:text-secondary transition-colors">
                   <Icon name="language" className="text-secondary text-lg" />
-                  <span>www.tinlabortechnik.com</span>
+                  <span>www.atamanlab.com</span>
                 </a>
               </div>
             </div>
