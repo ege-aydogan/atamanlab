@@ -25,6 +25,8 @@ const brands = [
   { name: 'Radwag', logo: '/uploads/brands/radwag.jpg' },
   { name: 'ISOLAB', logo: '/uploads/brands/isolab.jpg' },
   { name: 'Miele', logo: '/uploads/brands/miele.jpg' },
+  { name: 'CPAchem', logo: '/uploads/brands/cpachem.svg' },
+  { name: 'LGC Standards', logo: '/uploads/brands/lgc-standards.jpg' },
 ];
 
 export function BrandSlider() {

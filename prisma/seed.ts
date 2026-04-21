@@ -610,8 +610,8 @@ async function main() {
   const teamMembers = [
     {
       fullName: "Mehmet Ataman",
-      title: "Genel Müdür / Geschäftsführer",
-      expertiseLabel: "Laboratuvar Ekipmanları & İhracat",
+      title: "Geschäftsführer / Managing Director",
+      expertiseLabel: "Laborgeräte & Export",
       photoUrl: "/uploads/images/team-placeholder.jpg",
       displayOrder: 1,
     },

@@ -44,7 +44,7 @@ export default async function BrandsPage() {
               <img
                 src={brand.logoUrl}
                 alt={brand.name}
-                className="h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
+                className="h-12 w-auto object-contain grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
               />
               <span className="mt-4 text-xs font-semibold text-on-surface-variant group-hover:text-secondary transition-colors duration-300">
                 {brand.name}
